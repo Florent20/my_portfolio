@@ -35,7 +35,7 @@ export function Navbar() {
                 <nav className="mx-auto max-w-7xl px-6 py-5 flex items-center justify-between">
                     <Link href="/" className="font-medium tracking-tight">
                         <span className="inline-block w-2 h-2 rounded-full bg-accent mr-2 align-middle" />
-                        Your Name
+                        Bwam Louis-Florent
                     </Link>
                     <ul className="hidden md:flex items-center gap-8 text-sm text-white/60">
                         {links.map((l) => (
