@@ -1,0 +1,21 @@
+[
+  {
+    "slug": "projects/analytics-dashboard",
+    "title": "Realtime Analytics Dashboard",
+    "summary": "A sub-second, realtime analytics platform handling 50k events/sec.",
+    "year": 2025,
+    "role": "Lead Engineer",
+    "stack": [
+      "Next.js",
+      "tRPC",
+      "Postgres",
+      "Redis",
+      "WebSockets"
+    ],
+    "cover": "/images/work/analytics.png",
+    "demo": "https://demo.example.com",
+    "repo": "https://github.com/you/analytics",
+    "featured": true,
+    "content": "const{Fragment:e,jsx:n,jsxs:r}=arguments[0];function _createMdxContent(t){const i={h2:\"h2\",li:\"li\",p:\"p\",ul:\"ul\",...t.components};return r(e,{children:[n(i.h2,{children:\"The problem\"}),\"\\n\",n(i.p,{children:\"The client's existing dashboard refreshed every 30 seconds and consistently missed spikes.\"}),\"\\n\",n(i.h2,{children:\"What I built\"}),\"\\n\",r(i.ul,{children:[\"\\n\",n(i.li,{children:\"Realtime ingestion pipeline (Redis Streams → worker → Postgres)\"}),\"\\n\",n(i.li,{children:\"WebSocket layer with backpressure\"}),\"\\n\",n(i.li,{children:\"Virtualized tables rendering 100k rows at 60fps\"}),\"\\n\"]}),\"\\n\",n(i.h2,{children:\"Result\"}),\"\\n\",r(i.ul,{children:[\"\\n\",n(i.li,{children:\"p95 latency dropped from 28s → 240ms\"}),\"\\n\",n(i.li,{children:\"50k events/sec sustained\"}),\"\\n\"]})]})}return{default:function(e={}){const{wrapper:r}=e.components||{};return r?n(r,{...e,children:n(_createMdxContent,{...e})}):_createMdxContent(e)}};"
+  }
+]

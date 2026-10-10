@@ -10,7 +10,7 @@ const projects = defineCollection({
         year: s.number(),
         role: s.string(),
         stack: s.array(s.string()),
-        cover: s.image(),
+        cover: s.string(),
         demo: s.string().url().optional(),
         repo: s.string().url().optional(),
         featured: s.boolean().default(false),

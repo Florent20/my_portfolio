@@ -11,10 +11,18 @@ import { MotionProvider } from "@/components/providers/MotionProvider";
 const geist = Geist({ subsets: ["latin"], variable: "--font-geist-sans" });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://yourname.dev"),
-  title: { default: "Your Name — Senior Software Engineer", template: "%s — Your Name" },
-  description: "Senior software engineer building fast, accessible, animated web products.",
-  openGraph: { type: "website", url: "https://yourname.dev", siteName: "Your Name" },
+  metadataBase: new URL("https://louisflorentbwam.dev"),
+  title: {
+    default: "Bwam Louis-Florent — Frontend Engineer",
+    template: "%s — Bwam Louis-Florent",
+  },
+  description:
+    "Frontend engineer turn designs into smooth, accessible interfaces that feel alive.",
+  openGraph: {
+    type: "website",
+    url: "https://louisflorentbwam.dev",
+    siteName: "Bwam Louis-Florent",
+  },
   twitter: { card: "summary_large_image" },
 };
 
