@@ -27,7 +27,7 @@ export function Hero() {
                     transition={{ delay: 2.0, duration: 0.8 }}
                     className="mb-6 text-xs uppercase tracking-[0.4em] text-white/40"
                 >
-                    Senior Software Engineer · Available for work
+                    Frontend Engineer · React · Next.js · Available for work
                 </motion.p>
 
                 <h1 className="text-[13vw] md:text-[9vw] leading-[0.95] font-medium tracking-tight">
