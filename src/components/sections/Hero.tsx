@@ -31,9 +31,9 @@ export function Hero() {
                 </motion.p>
 
                 <h1 className="text-[13vw] md:text-[9vw] leading-[0.95] font-medium tracking-tight">
-                    <RevealText text="Building" delay={2.1} className="block" />
-                    <RevealText text="digital products" delay={2.2} className="block text-gradient" />
-                    <RevealText text="that feel alive." delay={2.3} className="block text-white/40" />
+                    <RevealText text="I build" delay={2.1} className="block" />
+                    <RevealText text="fast, animated" delay={2.2} className="block text-gradient" />
+                    <RevealText text="web products." delay={2.3} className="block text-white/40" />
                 </h1>
 
                 <motion.div
