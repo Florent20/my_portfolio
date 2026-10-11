@@ -44,6 +44,7 @@ function ProjectRow({ project, index }: { project: any; index: number }) {
                         src={project.cover}
                         alt={project.title}
                         fill
+                        priority={index === 0}
                         sizes="(max-width: 768px) 100vw, 60vw"
                         className="object-cover transition-transform duration-[1200ms] ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.04]"
                     />
