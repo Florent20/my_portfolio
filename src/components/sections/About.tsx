@@ -11,26 +11,28 @@ export function About() {
                 </div>
                 <div className="md:col-span-8">
                     <RevealText
-                        text="I'm a senior engineer with a decade of shipping products used by millions."
+                        text="I'm a frontend engineer focused on building fast, animated, and accessible web products."
                         className="text-3xl md:text-5xl font-medium tracking-tight leading-tight"
                     />
                     <div className="mt-12 grid md:grid-cols-2 gap-8 text-white/60 leading-relaxed">
                         <p>
-                            I specialize in performance-critical frontends, design systems, and
-                            animation. I've led teams at seed-stage startups and scaled systems
-                            to millions of users.
+                            I specialize in React, Next.js, and modern motion design. I care
+                            about the details that make interfaces feel alive: smooth
+                            transitions, sub-second loads, and code that other developers
+                            enjoy reading.
                         </p>
                         <p>
-                            Outside work: film photography, analog synths, and trail running.
-                            I write occasionally about animation and systems design.
+                            Outside work, I explore new frontend tools, contribute to open
+                            source, and study how great products are designed. I'm always
+                            open to interesting projects and conversations.
                         </p>
                     </div>
 
                     <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8">
                         {[
-                            { k: "10+", v: "Years shipping" },
-                            { k: "40+", v: "Projects launched" },
-                            { k: "3", v: "Companies scaled" },
+                            { k: "3+", v: "Years coding" },
+                            { k: "10+", v: "Projects built" },
+                            { k: "100%", v: "Passion for UI" },
                             { k: "∞", v: "Cups of coffee" },
                         ].map((s) => (
                             <div key={s.v}>
