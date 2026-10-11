@@ -13,17 +13,17 @@ export function Contact() {
                     className="text-6xl md:text-8xl font-medium tracking-tight"
                 />
                 <div className="mt-16 flex flex-wrap justify-center gap-6">
-                    <MagneticButton href="mailto:you@yourname.dev">
-                        you@yourname.dev
+                    <MagneticButton href="mailto:louisflorentbwam@gmail.com">
+                        louisflorentbwam@gmail.com
                     </MagneticButton>
                     <a
-                        href="https://linkedin.com/in/you"
+                        href="https://linkedin.com/in/louisflorent"
                         className="inline-flex items-center gap-3 px-7 py-4 rounded-full border border-white/15 hover:border-white/40 text-sm transition-colors"
                     >
                         LinkedIn
                     </a>
                     <a
-                        href="https://github.com/you"
+                        href="https://github.com/Florent20"
                         className="inline-flex items-center gap-3 px-7 py-4 rounded-full border border-white/15 hover:border-white/40 text-sm transition-colors"
                     >
                         GitHub
