@@ -25,7 +25,7 @@ export function Preloader() {
                             transition={{ delay: 0.2 }}
                             className="text-xs uppercase tracking-[0.4em] text-white/50"
                         >
-                            Your Name
+                            Bwam Louis-Florent
                         </motion.div>
                         <motion.div
                             className="mt-4 h-[1px] bg-white/10 w-48 overflow-hidden"

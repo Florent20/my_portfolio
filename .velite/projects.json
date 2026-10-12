@@ -1,21 +1,21 @@
 [
   {
-    "slug": "projects/analytics-dashboard",
-    "title": "Realtime Analytics Dashboard",
-    "summary": "A sub-second, realtime analytics platform handling 50k events/sec.",
-    "year": 2025,
-    "role": "Lead Engineer",
+    "slug": "projects/parentplus-cameroon",
+    "title": "ParentPlus Cameroon",
+    "summary": "A web app helping Cameroonian parents build stronger communication with their children through guided conversations and shared activities.",
+    "year": 2026,
+    "role": "Frontend Engineer",
     "stack": [
-      "Next.js",
-      "tRPC",
-      "Postgres",
-      "Redis",
-      "WebSockets"
+      "HTML",
+      "CSS",
+      "Javascript",
+      "Node.js",
+      "Express.js"
     ],
-    "cover": "/images/work/analytics.png",
-    "demo": "https://demo.example.com",
-    "repo": "https://github.com/you/analytics",
+    "cover": "/images/work/parentplus.png",
+    "demo": "https://parentplus-xi.vercel.app",
+    "repo": "https://github.com/Florent20/parentplus-cameroon",
     "featured": true,
-    "content": "const{Fragment:e,jsx:n,jsxs:r}=arguments[0];function _createMdxContent(t){const i={h2:\"h2\",li:\"li\",p:\"p\",ul:\"ul\",...t.components};return r(e,{children:[n(i.h2,{children:\"The problem\"}),\"\\n\",n(i.p,{children:\"The client's existing dashboard refreshed every 30 seconds and consistently missed spikes.\"}),\"\\n\",n(i.h2,{children:\"What I built\"}),\"\\n\",r(i.ul,{children:[\"\\n\",n(i.li,{children:\"Realtime ingestion pipeline (Redis Streams → worker → Postgres)\"}),\"\\n\",n(i.li,{children:\"WebSocket layer with backpressure\"}),\"\\n\",n(i.li,{children:\"Virtualized tables rendering 100k rows at 60fps\"}),\"\\n\"]}),\"\\n\",n(i.h2,{children:\"Result\"}),\"\\n\",r(i.ul,{children:[\"\\n\",n(i.li,{children:\"p95 latency dropped from 28s → 240ms\"}),\"\\n\",n(i.li,{children:\"50k events/sec sustained\"}),\"\\n\"]})]})}return{default:function(e={}){const{wrapper:r}=e.components||{};return r?n(r,{...e,children:n(_createMdxContent,{...e})}):_createMdxContent(e)}};"
+    "content": "const{Fragment:e,jsx:n,jsxs:i}=arguments[0];function _createMdxContent(t){const r={h2:\"h2\",li:\"li\",p:\"p\",strong:\"strong\",ul:\"ul\",...t.components};return i(e,{children:[n(r.h2,{children:\"The problem\"}),\"\\n\",n(r.p,{children:\"Many parents in Cameroon struggle to have meaningful conversations with their children. Cultural gaps, busy schedules, and a lack of accessible resources leave families with few tools to talk about school, emotions, and daily life. Existing parenting apps are built for Western contexts — English-only, expensive, and disconnected from Cameroonian family realities.\"}),\"\\n\",n(r.h2,{children:\"What I built\"}),\"\\n\",i(r.ul,{children:[\"\\n\",i(r.li,{children:[n(r.strong,{children:\"A bilingual web app\"}),\" — French and English — so parents across Cameroon can use it regardless of their region.\"]}),\"\\n\",i(r.li,{children:[n(r.strong,{children:\"Guided conversation prompts\"}),\" — daily questions and activities designed around real Cameroonian family situations: school, faith, respect, and community.\"]}),\"\\n\",i(r.li,{children:[n(r.strong,{children:\"A shared activity feed\"}),\" — parents and children log moments together, creating a light history of their conversations.\"]}),\"\\n\",i(r.li,{children:[n(r.strong,{children:\"A mobile-first interface\"}),\" — most users access the app from phones on limited data plans, so every page is optimised for speed and small screens.\"]}),\"\\n\",i(r.li,{children:[n(r.strong,{children:\"Accessible design\"}),\" — large text, high-contrast colours, and clear navigation for users who are not used to complex apps.\"]}),\"\\n\"]}),\"\\n\",n(r.h2,{children:\"Result\"}),\"\\n\",i(r.ul,{children:[\"\\n\",n(r.li,{children:\"Built and shipped the full frontend from design to deployment.\"}),\"\\n\",n(r.li,{children:\"Reduced initial load time by keeping the bundle small and using Next.js static generation.\"}),\"\\n\",n(r.li,{children:\"Designed for low-bandwidth users — the app works on 3G connections.\"}),\"\\n\",n(r.li,{children:\"Bilingual interface serving both francophone and anglophone regions of Cameroon.\"}),\"\\n\"]})]})}return{default:function(e={}){const{wrapper:i}=e.components||{};return i?n(i,{...e,children:n(_createMdxContent,{...e})}):_createMdxContent(e)}};"
   }
 ]
