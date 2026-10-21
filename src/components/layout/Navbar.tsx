@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import { ScrambleText } from "@/components/animations/ScrambleText";
 import { motion, useScroll, useSpring, useMotionValueEvent } from "motion/react";
 import { useState } from "react";
 
@@ -41,7 +42,7 @@ export function Navbar() {
                         {links.map((l) => (
                             <li key={l.href}>
                                 <Link href={l.href} className="hover:text-white transition-colors">
-                                    {l.label}
+                                    <ScrambleText text={l.label} />
                                 </Link>
                             </li>
                         ))}
