@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { RevealText } from "@/components/animations/RevealText";
 import { TiltCard } from "@/components/animations/TiltCard";
+import { AnimatedUnderline } from "@/components/animations/AnimatedUnderline";
 
 export function Work() {
     const featured = projects
@@ -13,10 +14,13 @@ export function Work() {
         <section id="work" className="relative py-32 md:py-48">
             <div className="mx-auto max-w-7xl px-6">
                 <div className="mb-20 flex items-end justify-between">
-                    <RevealText
-                        text="Selected work"
-                        className="text-5xl md:text-7xl font-medium tracking-tight"
-                    />
+                    <div>
+                        <RevealText
+                            text="Selected work"
+                            className="text-5xl md:text-7xl font-medium tracking-tight"
+                        />
+                        <AnimatedUnderline className="mt-6 w-24 md:w-40" />
+                    </div>
                     <span className="text-xs uppercase tracking-[0.3em] text-white/40">
                         {featured.length} projects
                     </span>

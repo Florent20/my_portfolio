@@ -3,6 +3,7 @@ import { Work } from "@/components/sections/Work";
 import { About } from "@/components/sections/About";
 import { Contact } from "@/components/sections/Contact";
 import { Marquee } from "@/components/animations/Marquee";
+import { LineDraw } from "@/components/animations/LineDraw";
 
 export default function Home() {
   return (
@@ -12,7 +13,9 @@ export default function Home() {
         items={["TypeScript", "React", "Next.js", "Node", "Postgres", "AWS", "WebGL", "GSAP"]}
         speed={35}
       />
+      <LineDraw />
       <Work />
+      <LineDraw />
       <About />
       <Contact />
     </>

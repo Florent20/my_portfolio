@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { ScrambleText } from "@/components/animations/ScrambleText";
+import { MagneticButton } from "@/components/animations/MagneticButton";
 import { motion, useScroll, useSpring, useMotionValueEvent } from "motion/react";
 import { useState } from "react";
 
@@ -47,12 +48,12 @@ export function Navbar() {
                             </li>
                         ))}
                     </ul>
-                    <a
+                    <MagneticButton
                         href="/resume.pdf"
-                        className="text-sm px-4 py-2 rounded-full border border-white/15 hover:border-white/40 transition-colors"
+                        className="!py-2 !px-4 !text-sm !bg-transparent !text-white border border-white/15 hover:border-white/40"
                     >
                         Resume
-                    </a>
+                    </MagneticButton>
                 </nav>
             </motion.header>
         </>

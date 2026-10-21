@@ -19,10 +19,37 @@ export function Preloader() {
                     transition={{ duration: 0.9, ease: [0.76, 0, 0.24, 1] }}
                 >
                     <div className="text-center">
+                        <svg
+                            viewBox="0 0 100 100"
+                            className="w-20 h-20 mx-auto mb-6"
+                            fill="none"
+                            aria-hidden
+                        >
+                            <motion.circle
+                                cx="50"
+                                cy="50"
+                                r="40"
+                                stroke="#8b5cf6"
+                                strokeWidth="1.5"
+                                strokeLinecap="round"
+                                initial={{ pathLength: 0 }}
+                                animate={{ pathLength: 1 }}
+                                transition={{ duration: 1.2, ease: "easeInOut" }}
+                            />
+                            <motion.circle
+                                cx="50"
+                                cy="50"
+                                r="4"
+                                fill="#a78bfa"
+                                initial={{ scale: 0 }}
+                                animate={{ scale: 1 }}
+                                transition={{ delay: 1.1, duration: 0.4 }}
+                            />
+                        </svg>
                         <motion.div
                             initial={{ opacity: 0, y: 10 }}
                             animate={{ opacity: 1, y: 0 }}
-                            transition={{ delay: 0.2 }}
+                            transition={{ delay: 1.2 }}
                             className="text-xs uppercase tracking-[0.4em] text-white/50"
                         >
                             Bwam Louis-Florent

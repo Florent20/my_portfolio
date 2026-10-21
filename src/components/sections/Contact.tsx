@@ -6,7 +6,7 @@ export function Contact() {
         <section id="contact" className="relative py-32 md:py-48 border-t border-white/5">
             <div className="mx-auto max-w-7xl px-6 text-center">
                 <div className="text-xs uppercase tracking-[0.3em] text-white/40 mb-8">
-                    Let's work together
+                    Let&apos;s work together
                 </div>
                 <RevealText
                     text="Have a project in mind?"
@@ -16,18 +16,18 @@ export function Contact() {
                     <MagneticButton href="mailto:louisflorentbwam@gmail.com">
                         louisflorentbwam@gmail.com
                     </MagneticButton>
-                    <a
+                    <MagneticButton
                         href="https://linkedin.com/in/louisflorent"
-                        className="inline-flex items-center gap-3 px-7 py-4 rounded-full border border-white/15 hover:border-white/40 text-sm transition-colors"
+                        className="!bg-transparent !text-white border border-white/15 hover:border-white/40"
                     >
                         LinkedIn
-                    </a>
-                    <a
+                    </MagneticButton>
+                    <MagneticButton
                         href="https://github.com/Florent20"
-                        className="inline-flex items-center gap-3 px-7 py-4 rounded-full border border-white/15 hover:border-white/40 text-sm transition-colors"
+                        className="!bg-transparent !text-white border border-white/15 hover:border-white/40"
                     >
                         GitHub
-                    </a>
+                    </MagneticButton>
                 </div>
             </div>
         </section>

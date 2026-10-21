@@ -7,6 +7,7 @@ import { Preloader } from "@/components/layout/Preloader";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { ScrollBackground } from "@/components/layout/ScrollBackground";
+import { CursorTrail } from "@/components/layout/CursorTrail";
 import { MotionProvider } from "@/components/providers/MotionProvider";
 
 const geist = Geist({ subsets: ["latin"], variable: "--font-geist-sans" });
@@ -34,6 +35,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <ScrollBackground />
         <MotionProvider>
           <Preloader />
+          <CursorTrail />
           <Cursor />
           <SmoothScroll>
             <Navbar />
