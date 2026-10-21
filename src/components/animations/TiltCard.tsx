@@ -19,8 +19,8 @@ export function TiltCard({
     const r = el.getBoundingClientRect();
     const x = (e.clientX - r.left) / r.width - 0.5;
     const y = (e.clientY - r.top) / r.height - 0.5;
-    rotateY.set(x * 12);
-    rotateX.set(-y * 12);
+    rotateY.set(x * 14);
+    rotateX.set(-y * 14);
   };
 
   const reset = () => {
@@ -38,6 +38,7 @@ export function TiltCard({
         rotateY,
         transformPerspective: 1000,
         transformStyle: "preserve-3d",
+        willChange: "transform",
       }}
       className={className}
     >
