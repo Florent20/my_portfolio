@@ -1,4 +1,16 @@
+import { CountUp } from "@/components/animations/CountUp";
 import { RevealText } from "@/components/animations/RevealText";
+
+type Stat =
+    | { label: string; to: number; suffix: string }
+    | { label: string; value: string };
+
+const stats: Stat[] = [
+    { to: 3, suffix: "+", label: "Years coding" },
+    { to: 10, suffix: "+", label: "Projects built" },
+    { to: 100, suffix: "%", label: "Passion for UI" },
+    { value: "∞", label: "Cups of coffee" },
+];
 
 export function About() {
     return (
@@ -23,22 +35,23 @@ export function About() {
                         </p>
                         <p>
                             Outside work, I explore new frontend tools, contribute to open
-                            source, and study how great products are designed. I'm always
+                            source, and study how great products are designed. I&apos;m always
                             open to interesting projects and conversations.
                         </p>
                     </div>
 
                     <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8">
-                        {[
-                            { k: "3+", v: "Years coding" },
-                            { k: "10+", v: "Projects built" },
-                            { k: "100%", v: "Passion for UI" },
-                            { k: "∞", v: "Cups of coffee" },
-                        ].map((s) => (
-                            <div key={s.v}>
-                                <div className="text-4xl font-medium tracking-tight">{s.k}</div>
+                        {stats.map((s) => (
+                            <div key={s.label}>
+                                <div className="text-4xl font-medium tracking-tight">
+                                    {"value" in s ? (
+                                        <span>{s.value}</span>
+                                    ) : (
+                                        <CountUp to={s.to} suffix={s.suffix} />
+                                    )}
+                                </div>
                                 <div className="text-xs uppercase tracking-[0.25em] text-white/40 mt-2">
-                                    {s.v}
+                                    {s.label}
                                 </div>
                             </div>
                         ))}
