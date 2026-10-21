@@ -61,9 +61,12 @@
   color-scheme: dark;
 }
 
-html,
-body {
+html {
   background: #050505;
+}
+
+body {
+  background: transparent;
   color: #f5f5f5;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;

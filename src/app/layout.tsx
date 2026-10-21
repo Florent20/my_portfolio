@@ -6,6 +6,7 @@ import { Cursor } from "@/components/layout/Cursor";
 import { Preloader } from "@/components/layout/Preloader";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
+import { ScrollBackground } from "@/components/layout/ScrollBackground";
 import { MotionProvider } from "@/components/providers/MotionProvider";
 
 const geist = Geist({ subsets: ["latin"], variable: "--font-geist-sans" });
@@ -29,7 +30,8 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${geist.variable} dark`}>
-      <body className="grain vignette bg-ink-950 text-white antialiased">
+      <body className="grain vignette bg-transparent text-white antialiased">
+        <ScrollBackground />
         <MotionProvider>
           <Preloader />
           <Cursor />
