@@ -2,6 +2,7 @@ import { projects } from "#site/content";
 import Image from "next/image";
 import Link from "next/link";
 import { RevealText } from "@/components/animations/RevealText";
+import { TiltCard } from "@/components/animations/TiltCard";
 
 export function Work() {
     const featured = projects
@@ -39,7 +40,7 @@ function ProjectRow({ project, index }: { project: any; index: number }) {
             className="group grid md:grid-cols-12 gap-8 items-center"
         >
             <div className={`md:col-span-7 ${flipped ? "md:order-2" : ""}`}>
-                <div className="relative overflow-hidden rounded-2xl aspect-[16/10] bg-ink-800">
+                <TiltCard className="relative overflow-hidden rounded-2xl aspect-[16/10] bg-ink-800">
                     <Image
                         src={project.cover}
                         alt={project.title}
@@ -49,7 +50,7 @@ function ProjectRow({ project, index }: { project: any; index: number }) {
                         className="object-cover transition-transform duration-[1200ms] ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.04]"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                </div>
+                </TiltCard>
             </div>
             <div className={`md:col-span-5 ${flipped ? "md:order-1" : ""}`}>
                 <div className="text-xs uppercase tracking-[0.3em] text-white/40 mb-4">
